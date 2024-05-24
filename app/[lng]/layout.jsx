@@ -1,4 +1,4 @@
-import LanguageSwitcher from "@/components/languageSwithcher";
+import Header from "@/components/header";
 import { artnoova, readex } from "@/font";
 import { dir } from "i18next";
 import "../globals.css";
@@ -17,9 +17,9 @@ export default function RootLayout({ params: { lng }, children }) {
       className={`${readex.variable} ${readex.className} ${artnoova.variable} ${artnoova.className}`}
     >
       <Providers>
-        <body>
-          <LanguageSwitcher lng={lng} />
-          {children}
+        <body className="bg-white px-[3.75em] py-[3.625em] max-w-[1800px] mx-auto">
+          <Header lng={lng} />
+          <main>{children}</main>
         </body>
       </Providers>
     </html>

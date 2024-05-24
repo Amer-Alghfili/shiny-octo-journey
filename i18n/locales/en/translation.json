@@ -1,1 +1,10 @@
-{ "home": "Home" }
+{
+  "home": "Home",
+  "download_now": "Download Now",
+  "real_estate": "Real estate",
+  "investor": "Investor",
+  "about_us": "About us",
+  "studies_and_reports": "Studies and reports",
+  "qa": "QA",
+  "home_hero": ""
+}
