@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { artnoova, readex } from "@/font";
 import { dir } from "i18next";
@@ -20,6 +21,7 @@ export default function RootLayout({ params: { lng }, children }) {
         <body className="bg-white px-[3.75em] pb-[3.625em] max-w-[1800px] mx-auto">
           <Header lng={lng} />
           <main>{children}</main>
+          <Footer lng={lng} />
         </body>
       </Providers>
     </html>
