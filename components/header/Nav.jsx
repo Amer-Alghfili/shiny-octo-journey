@@ -11,8 +11,6 @@ export default function Nav({ lng, t }) {
 
   const pathname = usePathname();
 
-  console.log(pathname);
-
   return (
     <nav>
       <ul className="flex gap-[2.03125em]">
