@@ -52,7 +52,7 @@ export default function Nav({ lng, t }) {
             {t("about_us")}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link
             className={
               `/${lng}/reports` === pathname ? activeLinkClasses : classes
@@ -61,7 +61,7 @@ export default function Nav({ lng, t }) {
           >
             {t("studies_and_reports")}
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link
             className={`/${lng}/q&a` === pathname ? activeLinkClasses : classes}
