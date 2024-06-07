@@ -31,25 +31,21 @@ function Section1({ t }) {
       <SectionHeader title={t("home_page_service_1")} />
       <div className="flex flex-col gap-[1.469375em]">
         <div className="flex gap-[1.5625em]">
-          <div className="flex-[38.4259259259%]">
-            <div className="zad h-[31.25em] relative rounded-[30px] bg-violet-10">
-              <div className="flex flex-col gap-[3em] py-[6.5625em] px-[8.299375em]">
-                <h5 className="zad text-orange-1 text-[2.8125rem] font-bold">
-                  {t("zad")}
-                </h5>
-                <p className="text-[black] text-[1.125rem]">{t("about_zad")}</p>
-              </div>
-            </div>
+          <div className="zad flex-[40%] relative rounded-[30px] bg-violet-10 flex flex-col gap-[3em] pt-[6.5625em] pb-[5em] ps-[8.299375em] pe-[4.8125em]">
+            <h5 className="zad text-orange-1 text-[2.8125rem] font-bold">
+              {t("zad")}
+            </h5>
+            <p className="text-[black] text-[1.125rem]">{t("about_zad")}</p>
           </div>
-          <div className="flex-[61.5740740741%]">
+          <div className="flex-[70%]">
             <IllustrationServiceCard
-              src="/img/hero-home.png"
-              height="31.25em"
+              src="/img/home-service-1.png"
+              // height="31.25em"
             />
           </div>
         </div>
         <div className="flex gap-[1.5625em]">
-          <div className="zad flex-[61.5740740741%] bg-orange-9 rounded-[30px] flex items-center">
+          <div className="zad flex-[60%] bg-orange-9 rounded-[30px] flex items-center">
             <Image
               src="/img/app-sample.png"
               height={750}
