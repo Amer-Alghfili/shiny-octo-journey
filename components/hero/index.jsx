@@ -1,4 +1,4 @@
-import { IllustrationServiceCard } from "../serviceCard/Illustration";
+import { IllustrationServiceCard } from "../IllustrationCard";
 
 export default function Hero({ title, src }) {
   return (

@@ -1,6 +1,6 @@
+import { IllustrationServiceCard } from "@/components/IllustrationCard";
 import Hero from "@/components/hero";
 import SectionHeader from "@/components/sectionHeader";
-import { IllustrationServiceCard } from "@/components/serviceCard/Illustration";
 import { useTranslation } from "@/i18n";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";

@@ -1,6 +1,5 @@
 import Hero from "@/components/hero";
 import SectionHeader from "@/components/sectionHeader";
-import { TextServiceCard } from "@/components/serviceCard/Text";
 import { useTranslation } from "@/i18n";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
@@ -14,21 +13,15 @@ export default async function RealEstatePage({ params: { lng } }) {
       <section className="flex flex-col gap-[5.15875em]">
         <SectionHeader title={t("real_estate_service")} />
         <div className="flex gap-[1.5625em]">
-          <TextServiceCard
-            height="40em"
-            className="zad flex-[100%] bg-violet-9 flex flex-col justify-center p-[2.5em]"
-          >
+          <div className="zad flex-[100%] bg-violet-9 flex flex-col justify-center p-[2.5em] relative rounded-[30px]">
             <p className="text-black text-[1.125rem] max-w-[19.426875em]">
               {t("real_estate_service_message")}
             </p>
             <Button className="zad bg-orange-1 text-white rounded-[100px] px-[2em] text-[1.125rem]">
               {t("real_estate_service_action")}
             </Button>
-          </TextServiceCard>
-          <TextServiceCard
-            height="40em"
-            className="flex-[100%] bg-[#FFE4D9] flex flex-col items-center justify-between p-[2.5em]"
-          >
+          </div>
+          <div className="flex-[100%] bg-[#FFE4D9] flex flex-col items-center justify-between p-[2.5em] relative rounded-[30px]">
             <Image
               src="/img/home-service-3-developer.png"
               width={771}
@@ -45,7 +38,7 @@ export default async function RealEstatePage({ params: { lng } }) {
                 {t("developer")}
               </Button>
             </div>
-          </TextServiceCard>
+          </div>
         </div>
       </section>
     </>
