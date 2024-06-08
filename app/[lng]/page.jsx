@@ -219,7 +219,7 @@ function Section5({ t }) {
   }
 
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[6.25em]">
       <SectionHeader title={t("home_page_service_5")} />
       <div className="flex gap-[1.5625em]">
         <Card
@@ -265,7 +265,7 @@ function Section6({ t }) {
   }
 
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[6.229375em]">
       <SectionHeader title={t("home_page_service_6")} />
       <div className="flex gap-[1.5625em]">
         <Card
@@ -290,7 +290,7 @@ function Section6({ t }) {
 
 function Section7({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_7")} />
       <div className="flex gap-[1.5625em]">
         <div className="flex-[100%] bg-[rgba(250,170,141,0.3)] flex flex-col items-center gap-[3em] p-[2.5em] pt-[5em] relative rounded-[30px]">
@@ -350,7 +350,7 @@ function Section8({ t }) {
   }
 
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_8")} />
       <div className="flex flex-col gap-[2.5em]">
         <IllustrationServiceCard
@@ -381,7 +381,7 @@ function Section8({ t }) {
 
 function Section9({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_9")} />
       <div className="flex flex-col gap-[1.6875em]">
         <div className="flex gap-[1.5625em]">
@@ -427,7 +427,7 @@ function Section9({ t }) {
 
 function Section12({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("contact_us")} />
       <div className="flex gap-[1.5625em]">
         <div className="zad flex-[30%] bg-violet-9 flex flex-col justify-center gap-[2.478125em] px-[8em] relative rounded-[30px]">
