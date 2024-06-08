@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export function IllustrationServiceCard({
-  height = "40em",
+  height = "32em",
   width = "100%",
   src,
 }) {
