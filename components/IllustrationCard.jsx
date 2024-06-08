@@ -4,18 +4,20 @@ export function IllustrationServiceCard({
   height = "32em",
   width = "100%",
   src,
+  classes,
 }) {
   return (
     <div
       style={{
-        height,
+        minHeight: height,
+        height: "100%",
         width,
       }}
-      className={`relative`}
+      className="relative"
     >
       <Image
         src={src}
-        className="block object-cover rounded-[30px]"
+        className={`object-cover rounded-[30px] ${classes}`}
         fill={true}
         quality={100}
         priority={true}

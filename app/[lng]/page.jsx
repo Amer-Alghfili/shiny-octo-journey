@@ -11,7 +11,11 @@ export default async function Home({ params: { lng } }) {
 
   return (
     <>
-      <Hero title={t("home_hero")} src="/img/hero-home.png" />
+      <Hero
+        title={t("home_hero")}
+        src="/img/hero-home.png"
+        classes="xl:object-[0_40%]"
+      />
       <Section1 t={t} />
       <Section2 t={t} />
       <Section3 t={t} />
@@ -27,66 +31,71 @@ export default async function Home({ params: { lng } }) {
 }
 function Section1({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[8.469375em]">
       <SectionHeader title={t("home_page_service_1")} />
       <div className="flex flex-col gap-[1.469375em]">
-        <div className="flex gap-[1.5625em]">
-          <div className="zad flex-[40%] relative rounded-[30px] bg-violet-10 flex flex-col gap-[3em] pt-[6.5625em] pb-[5em] ps-[8.299375em] pe-[4.8125em]">
+        <div className="flex flex-col-reverse lg:flex-row gap-[1.5625em]">
+          <div className="zad lg:flex-[35%] relative rounded-[30px] bg-violet-10 flex flex-col gap-[2em] py-[3em] ps-[6em] pe-[3em]">
             <h5 className="zad text-orange-1 text-[2.8125rem] font-bold">
               {t("zad")}
             </h5>
             <p className="text-[black] text-[1.125rem]">{t("about_zad")}</p>
           </div>
-          <div className="flex-[70%]">
-            <IllustrationServiceCard
+          <div className="lg:flex-[65%] h-[25em] 2xl:h-[30em] relative">
+            <Image
               src="/img/home-service-1.png"
-              // height="31.25em"
+              className="object-cover rounded-[30px]"
+              fill={true}
+              quality={100}
+              priority={true}
+              alt="icon"
             />
           </div>
         </div>
-        <div className="flex gap-[1.5625em]">
-          <div className="zad flex-[60%] bg-orange-9 rounded-[30px] flex items-center">
+        <div className="flex flex-col xl:flex-row gap-[1.5625em]">
+          <div className="zad lg:flex-[70%] relative bg-orange-9 rounded-[30px] flex flex-col justify-center">
             <Image
               src="/img/app-sample.png"
-              height={750}
-              width={1064}
-              className="block rounded-[30px]"
-              alt="icon"
+              className="rounded-[30px]"
+              width="1064"
+              height="750"
               quality={100}
+              priority={true}
+              alt="icon"
             />
           </div>
-          <div className="flex-[38.4259259259%]">
-            <div className="zad h-[46.875em] relative rounded-[30px] bg-violet-9">
-              <div className="flex flex-col items-center gap-[5.76em] py-[6.5625em] px-[5.184375em]">
-                <h5 className="zad text-black text-[2.8125rem] font-bold">
-                  {t("download_app")}
-                </h5>
-                <p className="text-[black] text-[0.8125rem] max-w-[11.90625em]">
-                  {t("download_app_message")}
-                </p>
-                <div className="flex flex-col gap-[1.20375em] w-full">
-                  <Link href="/">
-                    <div className="bg-[#FAAA8D] h-[5.031875em] flex items-center justify-center relative rounded-[30px]">
-                      <Image
-                        src="/img/google-play.png"
-                        width="143"
-                        height="34"
-                        alt="googl-play"
-                      />
-                    </div>
-                  </Link>
-                  <Link href="/">
-                    <div className="bg-[#C5BFFF] flex items-center justify-center h-[5.031875em] relative rounded-[30px]">
-                      <Image
-                        src="/img/ios.png"
-                        width="143"
-                        height="34"
-                        alt="googl-play"
-                      />
-                    </div>
-                  </Link>
-                </div>
-              </div>
+          <div className="zad lg:flex-[30%] rounded-[30px] bg-violet-9 flex flex-col items-center pt-[7.5em] pb-[5em] px-[3em] md:px-[5.184375em]">
+            <h5 className="zad text-black text-[2.8125rem] font-bold text-center">
+              {t("download_app")}
+            </h5>
+            <p className="text-[black] text-[1.2rem] xl:text-[0.8125rem] text-center max-w-[14em] mt-[2.5em] xl:mt-[5.76em] mb-[4em] xl:mb-[8em]">
+              {t("download_app_message")}
+            </p>
+            <div className="flex flex-col gap-[1.20375em] w-full items-center">
+              <Link
+                href="/"
+                className="bg-[#FAAA8D] flex items-center justify-center py-[1.45125em] px-[2em] w-full max-w-[18em] rounded-[30px]"
+              >
+                <Image
+                  src="/img/google-play.png"
+                  width="143"
+                  height="34"
+                  alt="googl-play"
+                  quality={100}
+                />
+              </Link>
+              <Link
+                href="/"
+                className="bg-[#C5BFFF] flex items-center justify-center py-[1.45125em] px-[2em] w-full max-w-[18em] rounded-[30px]"
+              >
+                <Image
+                  src="/img/ios.png"
+                  width="143"
+                  height="34"
+                  alt="ios"
+                  quality={100}
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -97,7 +106,7 @@ function Section1({ t }) {
 
 function Section2({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_2")} />
       <div className="flex gap-[1.5625em]">
         <div className="flex-[61.5740740741%]">
@@ -118,7 +127,7 @@ function Section2({ t }) {
 
 function Section3({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.5em]">
       <SectionHeader title={t("home_page_service_3")} />
       <div className="flex gap-[1.5625em]">
         <div className="zad flex-[61.5740740741%] bg-violet-9 flex flex-col gap-[8.75em] items-center justify-between p-[2.5em] relative rounded-[30px]">

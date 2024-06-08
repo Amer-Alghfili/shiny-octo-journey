@@ -1,6 +1,6 @@
 import { IllustrationServiceCard } from "../IllustrationCard";
 
-export default function Hero({ title, message, src }) {
+export default function Hero({ title, message, src, classes }) {
   return (
     <section className="flex flex-col gap-[2.90875em] mt-[3em]">
       <header className="flex flex-col gap-[3.125em] items-center">
@@ -11,7 +11,7 @@ export default function Hero({ title, message, src }) {
           <div className="max-w-[24.403125em] text-center">{message}</div>
         ) : null}
       </header>
-      <IllustrationServiceCard src={src} />
+      <IllustrationServiceCard src={src} classes={classes} />
     </section>
   );
 }
