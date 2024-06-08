@@ -136,39 +136,45 @@ function Section3({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[12.5em]">
       <SectionHeader title={t("home_page_service_3")} />
-      <div className="flex gap-[1.5625em]">
-        <div className="zad flex-[61.5740740741%] bg-violet-9 flex flex-col gap-[8.75em] items-center justify-between p-[2.5em] relative rounded-[30px]">
-          <Image
-            src="/img/home-service-3-investor.png"
-            width={771}
-            height={446}
-            className="rounded-[30px]"
-            alt="developer"
-            quality={100}
-          />
-          <div className="flex justify-between w-full items-center">
-            <span className="text-black font-medium text-[2.5rem]">
+      <div className="flex flex-col md:flex-row gap-[1.5625em]">
+        <div className="zad flex-[61.5740740741%] bg-violet-9 flex flex-col gap-[2em] xl:gap-[8.75em] items-center justify-between p-[2em] rounded-[30px]">
+          <div className="relative w-full h-[25em] md:h-[18em] xl:h-[22em] 2xl:h-[27em]">
+            <Image
+              src="/img/home-service-3-investor.png"
+              className="object-cover rounded-[30px]"
+              fill={true}
+              alt="developer"
+              quality={100}
+            />
+          </div>
+          <div className="flex flex-col xl:flex-row gap-[2em] [@media(max-width:71.25em)]:justify-center lg:justify-between w-full items-center px-[2em]">
+            <span className="text-black font-medium text-[2rem] lg:text-[2.5rem]">
               {t("register_as_investor")}
             </span>
-            <Button className="zad bg-orange-1 text-white rounded-[100px] px-[2em] text-[1.125rem]">
+            <Button className="zad bg-orange-1 text-white rounded-[100px] px-[3em] py-[1.2em] md:py-[1.5em] text-[1.125rem]">
               {t("investor")}
             </Button>
           </div>
         </div>
-        <div className="zad flex-[61.5740740741%] bg-[#FFE4D9] flex flex-col items-center justify-between p-[2.5em] relative rounded-[30px]">
-          <Image
-            src="/img/home-service-3-developer.png"
-            width={771}
-            height={446}
-            className="rounded-[30px]"
-            alt="developer"
-            quality={100}
-          />
-          <div className="flex justify-between w-full">
-            <span className="text-black font-medium text-[2.5rem]">
+        <div className="zad flex-[61.5740740741%] bg-[#FFE4D9] flex flex-col items-center justify-between p-[2em] relative rounded-[30px]">
+          <div className="relative w-full h-[25em] md:h-[18em] xl:h-[22em] 2xl:h-[27em]">
+            <Image
+              src="/img/home-service-3-developer.png"
+              className="object-cover rounded-[30px]"
+              fill={true}
+              alt="developer"
+              quality={100}
+            />
+          </div>
+          <div
+            className="flex flex-col xl:flex-row gap-[2em]
+          [@media(max-width:74.375em)]:justify-center lg:justify-between w-full
+          items-center px-[2em]"
+          >
+            <span className="text-black font-medium text-[2rem] lg:text-[2.5rem]">
               {t("register_as_developer")}
             </span>
-            <Button className="zad bg-orange-1 text-white rounded-[100px] px-[2em] text-[1.125rem] items-center">
+            <Button className="zad bg-orange-1 text-white rounded-[100px] px-[3em] py-[1.2em] md:py-[1.5em] text-[1.125rem]">
               {t("developer")}
             </Button>
           </div>
@@ -180,7 +186,7 @@ function Section3({ t }) {
 
 function Section4({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_4")} />
       <IllustrationServiceCard
         src="/img/home-service-4.png"
