@@ -108,17 +108,24 @@ function Section2({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_2")} />
-      <div className="flex gap-[1.5625em]">
-        <div className="flex-[61.5740740741%]">
-          <IllustrationServiceCard src="/img/home-service-2.png" />
-        </div>
-        <div className="flex-[38.4259259259%] zad bg-violet-10 relative rounded-[30px] flex flex-col gap-[3em] py-[6.5625em] px-[8.299375em] items-start">
-          <p className="text-[black] text-[1.125rem]">
+      <div className="flex flex-col-reverse xl:flex-row  gap-[1.5625em]">
+        <div className="xl:flex-[38.4259259259%] zad bg-violet-10 relative rounded-[30px] flex flex-col gap-[3em] justify-between py-[6.5625em] px-[2em] xl:ps-[8.299375em] xl:pe-[3em] items-center xl:items-start">
+          <p className="text-[black] text-[1.125rem] w-[80%] xl-w-auto xl:max-w-[25em] text-center xl:text-start">
             {t("service_2_message")}
           </p>
           <Button className="zad bg-orange-1 text-white rounded-[100px] px-[3em] text-[1.125rem] font-normal">
             {t("submit_order_btn")}
           </Button>
+        </div>
+        <div className="xl:flex-[61.5740740741%] h-[33em] lg:h-[40em] relative">
+          <Image
+            src="/img/home-service-2.png"
+            className="object-cover rounded-[30px]"
+            fill={true}
+            quality={100}
+            priority={true}
+            alt="icon"
+          />
         </div>
       </div>
     </section>
