@@ -20,19 +20,28 @@ export default async function InvestorsPage({ params: { lng } }) {
 
 function Service1({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[8.469375em]">
       <SectionHeader title={t("investors_service")} />
       <div className="flex flex-col gap-[1.6875em]">
-        <div className="flex gap-[1.5625em]">
-          <div className="flex-[85%] bg-[#FFD1C0] flex flex-col gap-[8em] justify-center p-[2.5em] ps-[8em] relative rounded-[30px]">
-            <p className="text-black text-[1.125rem] max-w-[13em]">
+        <div className="flex flex-wrap gap-[1.5625em]">
+          <div className="flex-[26em] bg-[#FFD1C0] flex flex-col gap-[5em] [@media(min-width:61.125em)]:gap-[8em] justify-center items-center [@media(min-width:61.125em)]:items-start p-[2.5em] [@media(min-width:61.125em)]:ps-[8em] relative rounded-[30px]">
+            <p className="text-black text-[1.125rem] w-[70%] [@media(min-width:61.125em)]:w-auto [@media(min-width:61.125em)]:max-w-[13em] text-center [@media(min-width:61.125em)]:text-start">
               {t("investors_service_1")}
             </p>
-            <Button className="zad bg-orange-1 text-white rounded-[100px] px-[2em] text-[1.125rem] self-start min-w-[11.75em]">
+            <Button className="zad bg-orange-1 text-white rounded-[100px] px-[2em] text-[1.125rem] min-w-[11.75em]">
               {t("investors_service_1_action")}
             </Button>
           </div>
-          <IllustrationServiceCard src="/img/investors-service-1-1.png" />
+          <div className="flex-[26em] relative h-[36em]">
+            <Image
+              src="/img/investors-service-1-1.png"
+              className="object-cover rounded-[30px]"
+              fill={true}
+              quality={100}
+              priority={true}
+              alt="icon"
+            />
+          </div>
         </div>
         <div className="flex flex-wrap gap-[1.6875em]">
           <Card
@@ -73,7 +82,7 @@ function Service1({ t }) {
 
 function Service2({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[8.469375em]">
       <SectionHeader title={t("investors_service_2")} />
       <div className="flex gap-[1.5625em]">
         <div className="flex-[85%] bg-[#FFD1C0] flex flex-col gap-[5em] justify-center p-[2.5em] ps-[8em] relative rounded-[30px]">
@@ -92,7 +101,7 @@ function Service2({ t }) {
 
 function Service3({ t }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
+    <section className="flex flex-col gap-[5.15875em] mt-[8.469375em]">
       <SectionHeader title={t("investors_service_3")} />
       <div className="flex flex-col gap-[1.6875em]">
         <IllustrationServiceCard src="/img/investors-service-3-1.png" />
@@ -149,7 +158,7 @@ function Card({ src, title, message, bg }) {
   return (
     <div
       style={{ background: bg }}
-      className="flex-[48%] flex flex-col items-center justify-center gap-[5em] py-[6em] rounded-[30px]"
+      className="flex-[30em] flex flex-col items-center justify-center gap-[5em] py-[6em] rounded-[30px]"
     >
       <Image src={src} width={120} height={111} alt="developer" quality={100} />
       <div className="flex flex-col gap-[3.4075em]">
