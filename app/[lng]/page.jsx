@@ -1,4 +1,3 @@
-import { IllustrationServiceCard } from "@/components/IllustrationCard";
 import Hero from "@/components/hero";
 import SectionHeader from "@/components/sectionHeader";
 import { useTranslation } from "@/i18n";
@@ -315,10 +314,16 @@ function Section7({ t }) {
           />
         </div>
         <div className="flex-[20em] bg-[rgba(250,170,141,0.3)] flex flex-col items-center gap-[3em] rounded-[30px]">
-          <IllustrationServiceCard
-            src="/img/home-service-7.png"
-            height="37.5em"
-          />
+          <div className="relative h-[37.5em] w-full">
+            <Image
+              src="/img/home-service-7.png"
+              className="object-cover rounded-[30px]"
+              fill={true}
+              quality={100}
+              priority={true}
+              alt="icon"
+            />
+          </div>
         </div>
         <div className="flex-[20em] bg-[rgba(197,191,255,0.3)] flex flex-col items-center gap-[3em] p-[2.5em] pt-[5em] relative rounded-[30px]">
           <h6 className="text-[#FF652D] font-medium text-[2.5rem]">
