@@ -1,4 +1,3 @@
-import { IllustrationServiceCard } from "@/components/IllustrationCard";
 import Hero from "@/components/hero";
 import SectionHeader from "@/components/sectionHeader";
 import { useTranslation } from "@/i18n";
@@ -113,7 +112,16 @@ function Service3({ t }) {
     <section className="flex flex-col gap-[5.15875em] mt-[8.469375em]">
       <SectionHeader title={t("investors_service_3")} />
       <div className="flex flex-col gap-[1.6875em]">
-        <IllustrationServiceCard src="/img/investors-service-3-1.png" />
+        <div className="relative h-[32em]">
+          <Image
+            src="/img/investors-service-3-1.png"
+            className="object-cover rounded-[30px]"
+            fill={true}
+            quality={100}
+            priority={true}
+            alt="icon"
+          />
+        </div>
         <div className="flex flex-wrap gap-[1.6875em]">
           <Card
             src="/img/investors-service-3-2.svg"
