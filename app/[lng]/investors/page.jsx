@@ -84,16 +84,25 @@ function Service2({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[8.469375em]">
       <SectionHeader title={t("investors_service_2")} />
-      <div className="flex gap-[1.5625em]">
-        <div className="flex-[85%] bg-[#FFD1C0] flex flex-col gap-[5em] justify-center p-[2.5em] ps-[8em] relative rounded-[30px]">
+      <div className="flex flex-wrap gap-[1.5625em]">
+        <div className="flex-[25em] bg-[#FFD1C0] flex flex-col gap-[3em] [@media(min-width:59.0625em)]:gap-[5em] justify-center items-center [@media(min-width:59.0625em)]:items-start p-[5em] [@media(min-width:59.0625em)]:p-[2.5em] [@media(min-width:59.0625em)]:ps-[8em] relative rounded-[30px]">
           <h5 className="zad text-orange-1 text-[2.1875rem] font-medium">
             {t("investors_service_2_title")}
           </h5>
-          <p className="text-black text-[1.125rem] max-w-[13em]">
+          <p className="text-black text-[1.125rem] w-[70%] [@media(min-width:59.0625em)]:w-auto [@media(min-width:59.0625em)]:max-w-[13em] text-center [@media(min-width:59.0625em)]:text-start">
             {t("investors_service_2_message")}
           </p>
         </div>
-        <IllustrationServiceCard src="/img/investors-service-2.png" />
+        <div className="flex-[25em] relative h-[32em] w-full">
+          <Image
+            src="/img/investors-service-2.png"
+            className="object-cover rounded-[30px]"
+            fill={true}
+            quality={100}
+            priority={true}
+            alt="icon"
+          />
+        </div>
       </div>
     </section>
   );
