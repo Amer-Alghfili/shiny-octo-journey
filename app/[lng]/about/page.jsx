@@ -38,20 +38,16 @@ export default async function AboutPage({ params: { lng } }) {
 
 function PartnerEven({ name, position, qualification, src }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
-      <div className="flex gap-[1.5625em]">
-        <div className="zad flex-[60%] bg-violet-10 flex flex-col gap-[8em] py-[5em] ps-[5em] relative rounded-[30px]">
-          <div className="flex flex-col gap-[1em]">
-            <h5 className="text-[#FF652D] font-bold text-[2.8125rem]">
-              {name}
-            </h5>
-            <div className="text-[1.125rem]">{position}</div>
-          </div>
-          <p className="text-[0.8125rem] max-w-[23em]">{qualification}</p>
+    <section className="flex gap-[1.5625em]">
+      <div className="zad flex-[60%] bg-violet-10 flex flex-col gap-[8em] py-[5em] ps-[5em] relative rounded-[30px]">
+        <div className="flex flex-col gap-[1em]">
+          <h5 className="text-[#FF652D] font-bold text-[2.8125rem]">{name}</h5>
+          <div className="text-[1.125rem]">{position}</div>
         </div>
-        <div className="flex-[40%]">
-          <IllustrationServiceCard src={src} height="45em" />
-        </div>
+        <p className="text-[0.8125rem] max-w-[23em]">{qualification}</p>
+      </div>
+      <div className="flex-[40%]">
+        <IllustrationServiceCard src={src} height="45em" />
       </div>
     </section>
   );
@@ -59,20 +55,16 @@ function PartnerEven({ name, position, qualification, src }) {
 
 function PartnerOdd({ name, position, qualification, src }) {
   return (
-    <section className="flex flex-col gap-[5.15875em]">
-      <div className="flex gap-[1.5625em]">
-        <div className="flex-[40%]">
-          <IllustrationServiceCard src={src} height="45em" />
+    <section className="flex gap-[1.5625em]">
+      <div className="flex-[40%]">
+        <IllustrationServiceCard src={src} height="45em" />
+      </div>
+      <div className="flex-[60%] bg-[#FFEDE5] flex flex-col gap-[8em] py-[5em] ps-[5em] relative rounded-[30px]">
+        <div className="flex flex-col gap-[1em]">
+          <h5 className="text-[#FF652D] font-bold text-[2.8125rem]">{name}</h5>
+          <div className="text-[1.125rem]">{position}</div>
         </div>
-        <div className="flex-[60%] bg-[#FFEDE5] flex flex-col gap-[8em] py-[5em] ps-[5em] relative rounded-[30px]">
-          <div className="flex flex-col gap-[1em]">
-            <h5 className="text-[#FF652D] font-bold text-[2.8125rem]">
-              {name}
-            </h5>
-            <div className="text-[1.125rem]">{position}</div>
-          </div>
-          <p className="text-[0.8125rem] max-w-[23em]">{qualification}</p>
-        </div>
+        <p className="text-[0.8125rem] max-w-[23em]">{qualification}</p>
       </div>
     </section>
   );
