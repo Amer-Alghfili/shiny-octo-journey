@@ -188,10 +188,16 @@ function Section4({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_4")} />
-      <IllustrationServiceCard
-        src="/img/home-service-4.png"
-        height="40.021875em"
-      />
+      <div className="relative h-[20em] md:h-[40.021875em]">
+        <Image
+          src="/img/home-service-4.png"
+          className="object-cover rounded-[30px]"
+          fill={true}
+          quality={100}
+          priority={true}
+          alt="icon"
+        />
+      </div>
     </section>
   );
 }
@@ -199,7 +205,7 @@ function Section4({ t }) {
 function Section5({ t }) {
   function Card({ src, title, message }) {
     return (
-      <div className="flex-[100%] bg-[#FFEDE5] flex flex-col items-center justify-center gap-[5em] p-[2.5em] relative rounded-[30px]">
+      <div className="flex-[20em] bg-[#FFEDE5] flex flex-col items-center justify-center gap-[5em] p-[2.5em] relative rounded-[30px]">
         <Image
           src={src}
           width={120}
@@ -209,7 +215,9 @@ function Section5({ t }) {
         />
         <div className="flex flex-col gap-[3.4075em]">
           <div className="flex flex-col items-center gap-[1.618125em]">
-            <h6 className="text-black font-medium text-[1.5625em]">{title}</h6>
+            <h6 className="text-black font-medium text-[1.5625em] text-center">
+              {title}
+            </h6>
             <div className="h-[2px] bg-[#8000FF] w-[6.25em]" />
           </div>
           <p>{message}</p>
@@ -221,7 +229,7 @@ function Section5({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[6.25em]">
       <SectionHeader title={t("home_page_service_5")} />
-      <div className="flex gap-[1.5625em]">
+      <div className="flex flex-wrap gap-[1.5625em]">
         <Card
           src="/img/home-service-5-3.svg"
           title={t("home-service-5-2")}
@@ -245,7 +253,7 @@ function Section5({ t }) {
 function Section6({ t }) {
   function Card({ src, title, message }) {
     return (
-      <div className="zad flex-[100%] bg-violet-10 flex flex-col items-center justify-center gap-[5em] p-[2.5em] relative rounded-[30px]">
+      <div className="zad flex-[20em] bg-violet-10 flex flex-col items-center justify-center gap-[5em] p-[2.5em] relative rounded-[30px]">
         <Image
           src={src}
           width={120}
@@ -255,7 +263,9 @@ function Section6({ t }) {
         />
         <div className="flex flex-col gap-[3.4075em]">
           <div className="flex flex-col items-center gap-[1.618125em]">
-            <h6 className="text-black font-medium text-[1.5625em]">{title}</h6>
+            <h6 className="text-black font-medium text-[1.5625em] text-center">
+              {title}
+            </h6>
             <div className="h-[2px] bg-[#8000FF] w-[6.25em]" />
           </div>
           <p>{message}</p>
@@ -267,7 +277,7 @@ function Section6({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[6.229375em]">
       <SectionHeader title={t("home_page_service_6")} />
-      <div className="flex gap-[1.5625em]">
+      <div className="flex flex-wrap gap-[1.5625em]">
         <Card
           src="/img/home-service-6-1.svg"
           title={t("home-service-6-1")}
@@ -292,8 +302,8 @@ function Section7({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_7")} />
-      <div className="flex gap-[1.5625em]">
-        <div className="flex-[100%] bg-[rgba(250,170,141,0.3)] flex flex-col items-center gap-[3em] p-[2.5em] pt-[5em] relative rounded-[30px]">
+      <div className="flex flex-wrap gap-[1.5625em]">
+        <div className="flex-[20em] bg-[rgba(250,170,141,0.3)] flex flex-col items-center gap-[3em] p-[2.5em] pt-[5em] relative rounded-[30px]">
           <h6 className="text-[#FF652D] font-medium text-[2.5rem]">
             {t("halal")}
           </h6>
@@ -308,13 +318,13 @@ function Section7({ t }) {
             quality={100}
           />
         </div>
-        <div className="flex-[100%] bg-[rgba(250,170,141,0.3)] flex flex-col items-center gap-[3em] rounded-[30px]">
+        <div className="flex-[20em] bg-[rgba(250,170,141,0.3)] flex flex-col items-center gap-[3em] rounded-[30px]">
           <IllustrationServiceCard
             src="/img/home-service-7.png"
             height="37.5em"
           />
         </div>
-        <div className="flex-[100%] bg-[rgba(197,191,255,0.3)] flex flex-col items-center gap-[3em] p-[2.5em] pt-[5em] relative rounded-[30px]">
+        <div className="flex-[20em] bg-[rgba(197,191,255,0.3)] flex flex-col items-center gap-[3em] p-[2.5em] pt-[5em] relative rounded-[30px]">
           <h6 className="text-[#FF652D] font-medium text-[2.5rem]">
             {t("home_section_7_2")}
           </h6>
@@ -330,7 +340,7 @@ function Section7({ t }) {
 function Section8({ t }) {
   function Card({ src, title, message }) {
     return (
-      <div className="zad flex-[100%] bg-violet-10 flex flex-col items-center gap-[5em] p-[2.5em] pt-[6em] relative rounded-[30px]">
+      <div className="zad flex-[20em] bg-violet-10 flex flex-col items-center gap-[5em] p-[2.5em] pt-[6em] relative rounded-[30px]">
         <Image
           src={src}
           width={100}
@@ -353,11 +363,17 @@ function Section8({ t }) {
     <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_8")} />
       <div className="flex flex-col gap-[2.5em]">
-        <IllustrationServiceCard
-          src="/img/home-service-8-1.png"
-          height="37.5em"
-        />
-        <div className="flex gap-[1.5625em]">
+        <div className="relative h-[20em] md:h-[37.5em]">
+          <Image
+            src="/img/home-service-8-1.png"
+            className="object-cover rounded-[30px]"
+            fill={true}
+            quality={100}
+            priority={true}
+            alt="icon"
+          />
+        </div>
+        <div className="flex flex-wrap gap-[1.5625em]">
           <Card
             src="/img/home-service-8-4.svg"
             title={t("home-service-8-3")}
@@ -384,18 +400,24 @@ function Section9({ t }) {
     <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("home_page_service_9")} />
       <div className="flex flex-col gap-[1.6875em]">
-        <div className="flex gap-[1.5625em]">
-          <div className="flex-[100%] bg-[rgb(255,237,229)] flex flex-col gap-[5em] pt-[4.916875em] pb-[3em] px-[6.179375em] relative rounded-[30px]">
+        <div className="flex flex-wrap gap-[1.5625em]">
+          <div className="flex-[20em] bg-[rgb(255,237,229)] flex flex-col gap-[5em] pt-[4.916875em] pb-[3em] px-[6.179375em] relative rounded-[30px]">
             <h6 className="text-black font-bold text-[2.8125rem]">555,000</h6>
             <p className="text-[0.8125rem]">{t("service-9-2-message")}</p>
           </div>
-          <div className="flex-[100%]">
-            <IllustrationServiceCard
-              src="/img/home-service-9.png"
-              height="28em"
-            />
+          <div className="flex-[20em]">
+            <div className="relative h-[28em]">
+              <Image
+                src="/img/home-service-9.png"
+                className="object-cover rounded-[30px]"
+                fill={true}
+                quality={100}
+                priority={true}
+                alt="icon"
+              />
+            </div>
           </div>
-          <div className="flex-[100%] bg-[rgb(255,237,229)] flex flex-col gap-[5em] pt-[4.916875em] pb-[3em] px-[6.179375em] relative rounded-[30px]">
+          <div className="flex-[20em] bg-[rgb(255,237,229)] flex flex-col gap-[5em] pt-[4.916875em] pb-[3em] px-[6.179375em] relative rounded-[30px]">
             <h6 className="text-black font-bold text-[2.8125rem]">127%</h6>
             <p className="text-[0.8125rem]">{t("service-9-1-message")}</p>
             <p className="zad text-orange-1 tet-[0.8125rem]">
@@ -403,7 +425,7 @@ function Section9({ t }) {
             </p>
           </div>
         </div>
-        <div className="flex gap-[1.5625em]">
+        <div className="flex flex-col lg:flex-row gap-[1.5625em]">
           <div className="zad flex-[50%] bg-violet-9 flex flex-col gap-[5em] pt-[4.916875em] pb-[3em] px-[6.179375em] relative rounded-[30px]">
             <h6 className="text-black font-bold text-[2.8125rem]">
               {t("service-9-2")}
@@ -414,10 +436,16 @@ function Section9({ t }) {
             </p>
           </div>
           <div className="flex-[100%]">
-            <IllustrationServiceCard
-              src="/img/home-service-9-1.png"
-              height="28em"
-            />
+            <div className="relative h-[28em]">
+              <Image
+                src="/img/home-service-9-1.png"
+                className="object-cover rounded-[30px]"
+                fill={true}
+                quality={100}
+                priority={true}
+                alt="icon"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -429,8 +457,8 @@ function Section12({ t }) {
   return (
     <section className="flex flex-col gap-[5.15875em] mt-[12.895625em]">
       <SectionHeader title={t("contact_us")} />
-      <div className="flex gap-[1.5625em]">
-        <div className="zad flex-[30%] bg-violet-9 flex flex-col justify-center gap-[2.478125em] px-[8em] relative rounded-[30px]">
+      <div className="flex flex-col-reverse lg:flex-row gap-[1.5625em]">
+        <div className="zad flex-[30%] bg-violet-9 flex flex-col justify-center gap-[2.478125em] px-[8em] py-[2em] relative rounded-[30px]">
           <div className="flex items-center gap-[2.5em]">
             <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full">
               <img src="/img/twitter.svg" alt="twitter" />
@@ -456,10 +484,16 @@ function Section12({ t }) {
             <p className="text-[1.125rem]">info@zadcapital.sa</p>
           </div>
         </div>
-        <IllustrationServiceCard
-          src="/img/home-service-12.png"
-          height="41.675625em"
-        />
+        <div className="relative h-[41.675625em]">
+          <Image
+            src="/img/home-service-12.png"
+            className="object-cover rounded-[30px]"
+            fill={true}
+            quality={100}
+            priority={true}
+            alt="icon"
+          />
+        </div>
       </div>
     </section>
   );
