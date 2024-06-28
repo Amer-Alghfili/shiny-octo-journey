@@ -18,7 +18,7 @@ export default function RootLayout({ params: { lng }, children }) {
       className={`${readex.variable} ${readex.className} ${artnoova.variable} ${artnoova.className}`}
     >
       <Providers>
-        <body className="bg-white px-[3.75em] pb-[3.625em] max-w-[1800px] mx-auto">
+        <body className="bg-white px-[3.75em] pb-[3.625em] max-w-[100.5625em] mx-auto">
           <Header lng={lng} />
           <main>{children}</main>
           <Footer lng={lng} />
