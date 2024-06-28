@@ -11,11 +11,7 @@ export default async function Home({ params: { lng } }) {
 
   return (
     <>
-      <Hero
-        title={t("home_hero")}
-        src="/img/hero-home.png"
-        classes="xl:object-[0_40%]"
-      />
+      <Hero title={t("home_hero")} src="/img/hero-home.png" />
       <Section1 t={t} />
       <Section2 t={t} />
       <Section3 t={t} />
