@@ -11,8 +11,14 @@ export default function Footer({ lng }) {
 
   return (
     <footer className="max-w-[75em] m-auto">
-      <div className="flex justify-between items-end mt-[12.8125em]">
-        <img src="/img/logo.png" width="252" height="69" alt="logo" />
+      <div className="flex flex-wrap justify-between items-end mt-[12.8125em]">
+        <img
+          src="/img/logo.png"
+          width="252"
+          height="69"
+          alt="logo"
+          className="translate-x-[3.5em] md:translate-x-0"
+        />
         <div className="flex gap-[12.8125em]">
           <ul className="flex flex-col gap-2">
             <li>
@@ -65,7 +71,7 @@ export default function Footer({ lng }) {
           </ul>
         </div>
       </div>
-      <div className="zad flex justify-between border-t border-t-black mt-[5.6875em] pt-[1em]">
+      <div className="zad flex flex-wrap gap-[2em] justify-between border-t border-t-black mt-[5.6875em] pt-[1em]">
         <div className="flex items-center">
           <ul className="flex items-center gap-[5.579375em]">
             <li>

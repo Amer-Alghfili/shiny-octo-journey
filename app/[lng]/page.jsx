@@ -461,26 +461,26 @@ function Section12({ t }) {
       <div className="flex flex-col-reverse lg:flex-row gap-[1.5625em]">
         <div className="zad flex-[30%] bg-violet-9 flex flex-col justify-center gap-[2.478125em] px-[8em] py-[2em] relative rounded-[30px]">
           <div className="flex items-center gap-[2.5em]">
-            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full">
-              <img src="/img/twitter.svg" alt="twitter" />
+            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full shrink-0">
+              <img src="/img/twitter.svg" alt="twitter" className="shrink-0" />
             </div>
             <p className="text-[1.125rem]">zadcapital</p>
           </div>
           <div className="flex items-center gap-[2.5em]">
-            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full">
-              <img src="/img/linkedin.svg" alt="twitter" />
+            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full shrink-0">
+              <img src="/img/linkedin.svg" alt="twitter" className="shrink-0" />
             </div>
             <p className="text-[1.125rem]">zadcapital</p>
           </div>
           <div className="flex items-center gap-[2.5em]">
-            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full">
-              <img src="/img/whatsapp.svg" alt="twitter" />
+            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full shrink-0">
+              <img src="/img/whatsapp.svg" alt="twitter" className="shrink-0" />
             </div>
             <p className="text-[1.125rem]">00966551234567</p>
           </div>
           <div className="flex items-center gap-[2.5em]">
-            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full">
-              <img src="/img/email.svg" alt="twitter" />
+            <div className="flex items-center justify-center w-[2.5em] h-[2.5em] bg-black rounded-full shrink-0">
+              <img src="/img/email.svg" alt="email" className="shrink-0" />
             </div>
             <p className="text-[1.125rem]">info@zadcapital.sa</p>
           </div>
