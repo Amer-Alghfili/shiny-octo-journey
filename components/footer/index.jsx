@@ -73,12 +73,12 @@ export default function Footer({ lng }) {
       </div>
       <div className="zad flex flex-wrap gap-[2em] justify-between border-t border-t-black mt-[5.6875em] pt-[1em]">
         <div className="flex items-center">
-          <ul className="flex items-center gap-[5.579375em]">
+          <ul className="flex flex-wrap items-center gap-[5.579375em]">
             <li>
               <Link href="#">{t("terms")}</Link>
             </li>
             <li>
-              <Link href="#">{t("terms")}</Link>
+              <Link href="#">{t("privacy")}</Link>
             </li>
             <li>
               {t("copywright", {
